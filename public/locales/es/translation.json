@@ -1,0 +1,205 @@
+{
+  "loadingScreen": {
+    "message": "Cargando"
+  },
+  "langBtn": {
+    "spanish": "Espanol",
+    "english": "English"
+  },
+  "loginCard": {
+    "title": "Bienvenido",
+    "noAccount": "¿No tienes cuenta?",
+    "registerNow": "Registrarse",
+    "thirdPartyAuth": "O inicia sesion con"
+  },
+  "registerCard": {
+    "title": "Registro",
+    "haveAccount": "¿Tienes cuenta?",
+    "login": "Iniciar sesion"
+  },
+  "recoverPasswordCard": {
+    "title": "Recuperar",
+    "description": "Se enviara un link de recuperacion de cuenta al correo proporcionado.",
+    "back": "Regresar"
+  },
+  "recoverPasswordForm": {
+    "email": "Correo electronico",
+    "recover": "Recuperar",
+    "success": "Correo enviado!"
+  },
+  "loginForm": {
+    "email": "Correo electronico",
+    "password": "Contrasena",
+    "login": "Iniciar sesion",
+    "rememberMe": "Recuerdame",
+    "recoverPass": "¿Contrasena olvidada?",
+    "errors": {
+      "email": "Inserte un correo valido.",
+      "password": "La contrasena es requerida."
+    }
+  },
+  "registerForm": {
+    "email": "Correo electronico",
+    "password": "Contrasena",
+    "passConfirm": "Confirmar contrasena",
+    "register": "Registrarse",
+    "success": "Correo de confirmacion enviado",
+    "errors": {
+      "email": "Inserte un correo valido.",
+      "password": "La contrasena es requerida.",
+      "passConfirm": "La confirmacion es requerida.",
+      "passwordMismatch": "Las contrasenas no coinciden."
+    }
+  },
+  "common": {
+    "loading": "Cargando",
+    "language": "Idioma",
+    "theme": "Tema",
+    "login": "Iniciar sesion",
+    "logout": "Cerrar sesion"
+  },
+  "navMenu": {
+    "home": "Inicio",
+    "products": "Productos",
+    "portfolio": "Portafolio",
+    "about": "Sobre nosotros",
+    "contact": "Contactanos"
+  },
+  "contactForm": {
+    "user_name": "Nombre",
+    "user_email": "Correo electronico",
+    "message": "Mensaje",
+    "submit": "Enviar correo",
+    "success": "Correo enviado!",
+    "errors": {
+      "user_name": "El nombre es requerido",
+      "user_email": "El correo es requerido",
+      "invalid_email": "El formato de correo no es valido",
+      "message": "El mensaje es requerido"
+    }
+  },
+  "emailCard": {
+    "title": "Envianos un correo",
+    "subtitle": "Responderemos lo antes posible.",
+    "socialMedia": "Siguenos en redes sociales"
+  },
+  "settingsForm": {
+    "title": "Configuracion",
+    "save": "Guardar",
+    "lang": "Idioma",
+    "darkMode": "Modo oscuro",
+    "enableNotifications": "Activar notificaciones"
+  },
+  "homePage": {
+    "hero": {
+      "title": "Impulsa tu presencia digital",
+      "subtitle": "Desarrollamos sitios web rápidos, modernos y adaptados a tu negocio.",
+      "contactUs": "Contactanos",
+      "portfolio": "Ver portafolio"
+    },
+    "services": {
+      "title": "Nuestros servicios",
+      "subtitle": "Soluciones diseñadas para cada etapa de tu presencia digital.",
+      "allServices": "Ver todos los servicios"
+    },
+    "footer": {
+      "readyToStart": "¿Listo para comenzar tu proyecto?",
+      "schedule": "Agenda una llamada gratuita y transforma tu idea en una solución digital real.",
+      "contactUs": "Contactanos"
+    }
+  },
+  "productsPage": {
+    "title": "Productos y servicios",
+    "description": "Ofrecemos soluciones digitales a medida que se adaptan a las necesidades de cada cliente. Desarrollamos landing pages, tiendas en línea, plataformas administrativas y software personalizado. También brindamos servicios de mantenimiento, mejora de funcionalidades y soporte técnico continuo para sitios web nuevos o existentes.",
+    "ourProducts": "Nuestros productos y servicios",
+    "products": {
+      "custom": {
+        "name": "Desarrollo a la Medida",
+        "shortDescription": "Soluciones únicas para necesidades únicas.",
+        "longDescription": "Creamos software web desde cero, completamente adaptado a tu idea, negocio o proceso. Desde MVPs hasta plataformas completas.",
+        "features": [
+          "Análisis de requerimientos",
+          "Arquitectura escalable",
+          "Entrega modular y evolutiva",
+          "Soporte en cada etapa del desarrollo"
+        ]
+      },
+      "landing": {
+        "name": "Landing Page Profesional",
+        "shortDescription": "Presencia web rápida y efectiva.",
+        "longDescription": "Creamos landing pages optimizadas para captar clientes, mostrar productos o lanzar campañas. Diseño moderno, responsivo y enfocado en la conversión.",
+        "features": [
+          "Carga rápida",
+          "Diseño adaptable (responsive)",
+          "Formulario de contacto integrado",
+          "Optimización SEO básica"
+        ]
+      },
+      "ecommerce": {
+        "name": "Tienda en Línea",
+        "shortDescription": "Vende tus productos 24/7 con una tienda online.",
+        "longDescription": "Diseño e implementación de tiendas en línea con pasarelas de pago, gestión de productos, usuarios y pedidos. Adaptada a tu marca y necesidades.",
+        "features": [
+          "Carrito de compras",
+          "Gestión de productos y pedidos",
+          "Pasarela de pago (Stripe, PayPal)",
+          "Panel administrativo"
+        ]
+      },
+      "admin": {
+        "name": "Plataforma Administrativa",
+        "shortDescription": "Control total sobre tu negocio digital.",
+        "longDescription": "Creamos plataformas internas para la gestión eficiente de recursos, usuarios, productos, órdenes y más. Adaptamos el sistema a tu flujo de trabajo.",
+        "features": [
+          "Dashboard personalizado",
+          "Gestión de usuarios y roles",
+          "Reportes y estadísticas",
+          "Acceso seguro con autenticación"
+        ]
+      },
+      "maintenance": {
+        "name": "Mantenimiento Web",
+        "shortDescription": "Tu sitio siempre actualizado y funcionando.",
+        "longDescription": "Brindamos soporte continuo, actualizaciones y mejoras técnicas para mantener tu sitio rápido, seguro y funcional.",
+        "features": [
+          "Actualizaciones periódicas",
+          "Mejoras de rendimiento",
+          "Revisión de errores",
+          "Respaldo y seguridad básica"
+        ]
+      }
+    }
+  },
+  "portfolioPage": {
+    "title": "Portafolio",
+    "description": "Estamos comenzando nuestra trayectoria con una visión clara: unir creatividad y tecnología para construir experiencias digitales únicas. Cada proyecto es una oportunidad para explorar ideas innovadoras y aprender constantemente mientras crecemos como equipo.",
+    "ourProjects": "Nuestros proyectos",
+    "projects": {
+      "cursedWaters": {
+        "name": "Aguas Malditas",
+        "description": "Un juego 3D donde defiendes una gema flotante en una isla tropical de oleadas de enemigos. La dificultad aumenta con cada oleada, y puedes curarte y mejorar recogiendo botín."
+      },
+      "dictionary": {
+        "name": "Diccionario",
+        "description": "Aplicación web desarrollada con Next.js que permite buscar palabras en inglés usando la API de Free Dictionary. Muestra definiciones, pronunciaciones, ejemplos de uso y más."
+      }
+    }
+  },
+  "aboutPage": {
+    "title": "Sobre Nosotros",
+    "description": "Somos una startup apasionada por el desarrollo web. Creamos soluciones digitales modernas, escalables y centradas en el usuario. Nuestro equipo combina creatividad, tecnología y compromiso con la excelencia.",
+    "ourTeam": "Nuestro Equipo",
+    "team": {
+      "jhonnyEstruve": {
+        "name": "Jhonny Estruve",
+        "role": "Desarrollador Frontend",
+        "bio": "Apasionado por el desarrollo de interfaces modernas y experiencias de usuario intuitivas."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Contactanos",
+    "description": "¿Tienes una idea, proyecto o necesitas ayuda con tu desarrollo web? Estamos listos para escucharte. Completa el formulario y te responderemos lo antes posible.",
+    "contactForm": "Formulario de contacto"
+  }
+}

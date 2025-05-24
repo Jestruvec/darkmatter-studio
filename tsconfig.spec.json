@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "types": ["vitest/globals", "@testing-library/jest-dom", "node"],
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "src/setupTests.ts"
+  ]
+}
