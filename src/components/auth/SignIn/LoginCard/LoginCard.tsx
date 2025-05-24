@@ -7,8 +7,8 @@ export const LoginCard = () => {
   const { t } = useTranslation();
 
   return (
-    <article className="w-full h-full flex flex-col justify-evenly">
-      <header className="flex justify-between p-4 border-b border-gray-200">
+    <article className="w-full h-full dark:border rounded-lg border-gray-500 shadow-lg flex flex-col justify-evenly">
+      <header className="flex justify-between p-4 border-b border-gray-200 dark:border-gray-500">
         <h1 className="text-2xl">{t("loginCard.title")}</h1>
         <LangSwitch />
       </header>

@@ -7,8 +7,8 @@ export const RegisterCard = () => {
   const { t } = useTranslation();
 
   return (
-    <article className="w-full h-full bg-white shadow flex flex-col justify-evenly">
-      <header className="flex justify-between p-4 border-b border-gray-200">
+    <article className="w-full h-full dark:border rounded-lg border-gray-500 shadow-lg flex flex-col justify-evenly">
+      <header className="flex justify-between p-4 border-b border-gray-200 dark:border-gray-500">
         <h1 className="text-2xl">{t("registerCard.title")}</h1>
         <LangSwitch />
       </header>
@@ -17,7 +17,7 @@ export const RegisterCard = () => {
         <RegisterForm />
       </section>
 
-      <footer className="p-4 text-center text-sm text-gray-700">
+      <footer className="p-4 text-center text-sm">
         <p>
           {t("registerCard.haveAccount")}
           <CustomBtn
