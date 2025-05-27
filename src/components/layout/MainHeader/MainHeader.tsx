@@ -2,9 +2,11 @@ import { FaBars } from "react-icons/fa";
 import { CustomBtn, UserMenu } from "@/components";
 import { useTranslation } from "react-i18next";
 import { getNavItems } from "@/utils";
+import { useIsMobile } from "@/hooks";
 
 export const MainHeader = ({ onToggleMenu }: { onToggleMenu: () => void }) => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   const navItems = getNavItems(t);
 
   return (
@@ -15,7 +17,13 @@ export const MainHeader = ({ onToggleMenu }: { onToggleMenu: () => void }) => {
 
       <nav className="hidden md:flex gap-2">
         {navItems.map((link) => (
-          <CustomBtn key={link.to} as="link" to={link.to} variant="text">
+          <CustomBtn
+            key={link.to}
+            as="link"
+            to={link.to}
+            variant="text"
+            aria-hidden={!isMobile}
+          >
             {link.label}
           </CustomBtn>
         ))}

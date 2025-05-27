@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
-  base: "/tesseract/",
+  base: "/tesseract",
   plugins: [react(), tailwindcss(), svgr()],
   assetsInclude: ["**/*.glb"],
   test: {

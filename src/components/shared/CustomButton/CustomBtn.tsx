@@ -38,7 +38,7 @@ export const CustomBtn = ({
   const disabledClases = disabled ? "opacity-50" : "cursor-pointer";
   const variantClasses = {
     primary:
-      "border border-gray-800 rounded-lg bg-gray-800 text-white dark:bg-white dark:text-gray-800",
+      "border border-gray-800 rounded-lg bg-gray-800 text-white dark:bg-white dark:text-gray-800 focus:ring-2 focus:ring-offset-2",
     secondary: "border border-gray-800 rounded-lg dark:border-white",
     danger: "",
     text: "focus:border-b",
