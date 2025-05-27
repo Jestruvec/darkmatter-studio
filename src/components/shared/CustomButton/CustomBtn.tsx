@@ -34,12 +34,13 @@ export const CustomBtn = ({
 }: ButtonProps | LinkProps) => {
   const { t } = useTranslation();
 
-  const baseClasses = "font-semibold focus:outline-none";
+  const baseClasses = "font-semibold focus:outline-none transition-colors";
   const disabledClases = disabled ? "opacity-50" : "cursor-pointer";
   const variantClasses = {
     primary:
-      "border border-gray-800 rounded-lg bg-gray-800 text-white dark:bg-white dark:text-gray-800 focus:ring-2 focus:ring-offset-2",
-    secondary: "border border-gray-800 rounded-lg dark:border-white",
+      "border border-gray-800 rounded-lg bg-gray-800 text-white dark:bg-white dark:text-gray-800 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800",
+    secondary:
+      "border border-gray-800 rounded-lg dark:border-white focus:ring-2 focus:ring-offset-2 focus:ring-gray-800",
     danger: "",
     text: "focus:border-b",
   };

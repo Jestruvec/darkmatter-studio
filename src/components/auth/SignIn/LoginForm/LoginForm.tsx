@@ -72,6 +72,7 @@ export const LoginForm = () => {
             text={t("loginForm.recoverPass")}
             variant="text"
             size="sm"
+            type="button"
           />
         </div>
       </div>

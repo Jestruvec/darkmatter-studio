@@ -11,7 +11,7 @@ export const MainFooter = ({ isOpen }: { isOpen: boolean }) => {
   const componentClasses = `${baseClasses} ${!isOpen && "translate-y-full"}`;
 
   return (
-    <ul className={componentClasses} aria-hidden={!isOpen}>
+    <ul className={componentClasses} inert={!isOpen ? true : undefined}>
       {navItems.map((item, index) => (
         <li
           key={index}

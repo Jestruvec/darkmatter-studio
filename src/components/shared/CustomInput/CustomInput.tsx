@@ -39,7 +39,7 @@ export const CustomInput = <T extends FieldValues>({
 
   const variantClasses = {
     outlined:
-      "border rounded-lg focus:ring-1 focus:ring-gray-800 dark:focus:ring-white",
+      "border rounded-lg focus:ring-2 focus:ring-offset-2 focus:ring-gray-800",
     underlined: "border-b focus:border-b-2",
   };
 
