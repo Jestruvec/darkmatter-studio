@@ -176,7 +176,7 @@
     "ourProjects": "Nuestros proyectos",
     "projects": {
       "cursedWaters": {
-        "name": "Aguas Malditas",
+        "name": "Cursed Waters",
         "description": "Un juego 3D donde defiendes una gema flotante en una isla tropical de oleadas de enemigos. La dificultad aumenta con cada oleada, y puedes curarte y mejorar recogiendo botín."
       },
       "dictionary": {
@@ -187,7 +187,7 @@
   },
   "aboutPage": {
     "title": "Sobre Nosotros",
-    "description": "Somos una startup apasionada por el desarrollo web. Creamos soluciones digitales modernas, escalables y centradas en el usuario. Nuestro equipo combina creatividad, tecnología y compromiso con la excelencia.",
+    "description": "Somos apasionados por el desarrollo web. Creamos soluciones digitales modernas, escalables y centradas en el usuario. Nuestro equipo combina creatividad, tecnología y compromiso con la excelencia.",
     "ourTeam": "Nuestro Equipo",
     "team": {
       "jhonnyEstruve": {
