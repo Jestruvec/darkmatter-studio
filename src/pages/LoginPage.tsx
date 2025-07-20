@@ -17,7 +17,7 @@ export const LoginPage = () => {
       </div>
 
       <div className="flex items-center justify-center px-6">
-        <div className="max-w-xl h-1/2 flex w-full">
+        <div className="max-w-xl min-h-1/2 flex w-full">
           <AuthUIProvider>
             <AuthUIContent />
           </AuthUIProvider>
