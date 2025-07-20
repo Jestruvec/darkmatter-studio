@@ -3,8 +3,8 @@
     "message": "Cargando"
   },
   "langBtn": {
-    "spanish": "Espanol",
-    "english": "English"
+    "spanish": "ES",
+    "english": "EN"
   },
   "loginCard": {
     "title": "Bienvenido",
@@ -122,7 +122,8 @@
           "Arquitectura escalable",
           "Entrega modular y evolutiva",
           "Soporte en cada etapa del desarrollo"
-        ]
+        ],
+        "price": "Variable segun requerimientos"
       },
       "landing": {
         "name": "Landing Page Profesional",
@@ -133,7 +134,8 @@
           "Diseño adaptable (responsive)",
           "Formulario de contacto integrado",
           "Optimización SEO básica"
-        ]
+        ],
+        "price": "a partir de 3,000 mxn"
       },
       "ecommerce": {
         "name": "Tienda en Línea",
@@ -144,7 +146,8 @@
           "Gestión de productos y pedidos",
           "Pasarela de pago (Stripe, PayPal)",
           "Panel administrativo"
-        ]
+        ],
+        "price": "a partir de 8,000 mxn"
       },
       "admin": {
         "name": "Plataforma Administrativa",
@@ -155,7 +158,8 @@
           "Gestión de usuarios y roles",
           "Reportes y estadísticas",
           "Acceso seguro con autenticación"
-        ]
+        ],
+        "price": "a partir de 12,000 mxn"
       },
       "maintenance": {
         "name": "Mantenimiento Web",
@@ -166,7 +170,8 @@
           "Mejoras de rendimiento",
           "Revisión de errores",
           "Respaldo y seguridad básica"
-        ]
+        ],
+        "price": "a partir de 1,000 mxn"
       }
     }
   },
@@ -177,11 +182,11 @@
     "projects": {
       "cursedWaters": {
         "name": "Cursed Waters",
-        "description": "Un juego 3D donde defiendes una gema flotante en una isla tropical de oleadas de enemigos. La dificultad aumenta con cada oleada, y puedes curarte y mejorar recogiendo botín."
+        "description": "Un juego 3D ambientado en una isla tropical, eres un pirata defendiendo una reliquia ancestral de oleadas de enemigos. La dificultad aumenta con cada oleada, ¿Cuantas oleadas podras sobrevivir?."
       },
       "dictionary": {
         "name": "Diccionario",
-        "description": "Aplicación web desarrollada con Next.js que permite buscar palabras en inglés usando la API de Free Dictionary. Muestra definiciones, pronunciaciones, ejemplos de uso y más."
+        "description": "Aplicación de diccionario en inglés que permite buscar una amplia variedad de palabras. Muestra definiciones claras, pronunciaciones, ejemplos de uso, sinónimos y más recursos útiles para el aprendizaje del idioma."
       }
     }
   },
