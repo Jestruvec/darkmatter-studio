@@ -1,5 +1,5 @@
+import { WebDevelopmentSVG } from "@/assets/svg";
 import {
-  TesseractScene,
   RegisterCard,
   LoginCard,
   RecoverPasswordCard,
@@ -9,13 +9,15 @@ import { useAuthUIContext } from "@/context";
 
 export const LoginPage = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-      <div className="h-[40dvh] md:h-full flex items-center justify-center">
-        <TesseractScene />
+    <div className="h-screen grid grid-cols-1 lg:grid-cols-2 dark:bg-gray-800 dark:text-white">
+      <div className="hidden lg:flex items-center justify-center">
+        <div className="max-w-xl flex">
+          <WebDevelopmentSVG />
+        </div>
       </div>
 
-      <div className="flex justify-center items-center p-6 h-[60dvh] md:h-full dark:bg-gray-800 dark:text-white">
-        <div className="w-full max-w-md h-[500px]">
+      <div className="flex items-center justify-center px-6">
+        <div className="max-w-xl h-1/2 flex w-full">
           <AuthUIProvider>
             <AuthUIContent />
           </AuthUIProvider>

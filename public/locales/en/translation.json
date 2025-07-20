@@ -3,8 +3,8 @@
     "message": "Loading"
   },
   "langBtn": {
-    "spanish": "Espanol",
-    "english": "English"
+    "spanish": "ES",
+    "english": "EN"
   },
   "loginCard": {
     "title": "Welcome",
@@ -122,7 +122,8 @@
           "Scalable architecture",
           "Modular and evolutionary delivery",
           "Support throughout every stage of development"
-        ]
+        ],
+        "price": "Variable according to requirements"
       },
       "landing": {
         "name": "Professional Landing Page",
@@ -133,7 +134,8 @@
           "Responsive design",
           "Integrated contact form",
           "Basic SEO optimization"
-        ]
+        ],
+        "price": "starting at $150"
       },
       "ecommerce": {
         "name": "Online Store",
@@ -144,7 +146,8 @@
           "Product and order management",
           "Payment gateway (Stripe, PayPal)",
           "Admin panel"
-        ]
+        ],
+        "price": "starting at $400"
       },
       "admin": {
         "name": "Admin Platform",
@@ -155,7 +158,8 @@
           "User and role management",
           "Reports and statistics",
           "Secure access with authentication"
-        ]
+        ],
+        "price": "starting at $600"
       },
       "maintenance": {
         "name": "Web Maintenance",
@@ -166,7 +170,8 @@
           "Performance improvements",
           "Error review",
           "Basic backup and security"
-        ]
+        ],
+        "price": "starting at $50"
       }
     }
   },
@@ -177,11 +182,11 @@
     "projects": {
       "cursedWaters": {
         "name": "Cursed Waters",
-        "description": "A 3D game where you defend a floating gem on a tropical island from waves of enemies. The game increases in difficulty with each raid, and you can heal and upgrade by collecting loot."
+        "description": "A 3D game set on a tropical island. You are a pirate defending an ancient relic from waves of enemies. The difficulty increases with each wave — how many will you survive?"
       },
       "dictionary": {
         "name": "Dictionary",
-        "description": "This is a web application built with Next.js that allows you to look up English words using the Free Dictionary API. The application displays definitions, pronunciations, usage examples, and more."
+        "description": "An English dictionary app that lets you search a wide range of words. It provides clear definitions, pronunciations, usage examples, synonyms, and other helpful resources for language learning."
       }
     }
   },

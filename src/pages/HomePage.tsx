@@ -1,5 +1,4 @@
-import { WebDevelopmentSVG } from "@/assets/svg";
-import { CustomBtn, ProductCard } from "@/components";
+import { CustomBtn, ProductCard, TesseractScene } from "@/components";
 import { products } from "@/utils";
 import { useTranslation } from "react-i18next";
 
@@ -7,20 +6,15 @@ export const HomePage = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="h-full overflow-auto">
-      <section className="min-h-[calc(100dvh-4rem)] flex flex-col md:flex-row items-center justify-between px-8 py-20 max-w-7xl mx-auto">
-        <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight ">
-            {t("homePage.hero.title")}
-          </h1>
-          <p className="mt-4 text-lg">{t("homePage.hero.subtitle")}</p>
-          <div className="mt-6 flex gap-4">
-            <CustomBtn
-              text={t("homePage.hero.portfolio")}
-              size="lg"
-              to="/portfolio"
-              as="link"
-            />
+    <section className="overflow-auto h-full">
+      <section className="relative flex items-center h-[calc(100dvh-4rem)] px-6">
+        <div className="text-center mx-auto max-w-[500px] flex flex-col gap-6">
+          <h1 className="text-4xl font-bold">{t("homePage.hero.title")}</h1>
+          <p className="text-2xl font-semibold">
+            {t("homePage.hero.subtitle")}
+          </p>
+
+          <div>
             <CustomBtn
               variant="secondary"
               text={t("homePage.hero.contactUs")}
@@ -30,8 +24,9 @@ export const HomePage = () => {
             />
           </div>
         </div>
-        <div className="md:w-1/2 md:mt-0">
-          <WebDevelopmentSVG className="w-full h-auto filter grayscale-50" />
+
+        <div className="absolute inset-0 -z-10">
+          <TesseractScene />
         </div>
       </section>
 

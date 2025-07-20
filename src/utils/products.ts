@@ -17,7 +17,7 @@ export const products: Product[] = [
     technologies: ["Vue", "React", "Express", "MongoDB"],
     illustration: CustomPageSVG,
     category: "desarrollo-a-medida",
-    priceRange: "A cotizar según requerimientos",
+    priceRange: "productsPage.products.custom.price",
   },
   {
     nameKey: "productsPage.products.landing.name",
@@ -28,7 +28,7 @@ export const products: Product[] = [
     technologies: ["HTML", "CSS", "JavaScript", "TailwindCSS"],
     illustration: LandingPageSVG,
     category: "servicio",
-    priceRange: "Desde $150 USD",
+    priceRange: "productsPage.products.landing.price",
   },
   {
     nameKey: "productsPage.products.ecommerce.name",
@@ -39,7 +39,7 @@ export const products: Product[] = [
     technologies: ["Vue", "Nuxt", "Stripe", "Firebase"],
     illustration: EcommercePageSVG,
     category: "servicio",
-    priceRange: "Desde $400 USD",
+    priceRange: "productsPage.products.ecommerce.price",
   },
   {
     nameKey: "productsPage.products.admin.name",
@@ -50,7 +50,7 @@ export const products: Product[] = [
     technologies: ["React", "Next.js", "Node.js", "PostgreSQL"],
     illustration: AdminPageSVG,
     category: "desarrollo-a-medida",
-    priceRange: "Desde $600 USD",
+    priceRange: "productsPage.products.admin.price",
   },
   {
     nameKey: "productsPage.products.maintenance.name",
@@ -61,6 +61,6 @@ export const products: Product[] = [
     technologies: ["CI/CD", "Git", "TypeScript"],
     illustration: WebMaintenanceSVG,
     category: "servicio",
-    priceRange: "Desde $50 USD/mes",
+    priceRange: "productsPage.products.maintenance.price",
   },
 ];

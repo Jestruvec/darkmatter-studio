@@ -12,6 +12,7 @@ export const LangSwitch = () => {
         text={t("langBtn.spanish")}
         onClick={() => i18n.changeLanguage("es")}
       />
+      /
       <CustomBtn
         variant="text"
         size="sm"

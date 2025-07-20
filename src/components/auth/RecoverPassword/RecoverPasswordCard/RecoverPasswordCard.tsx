@@ -7,7 +7,7 @@ export const RecoverPasswordCard = () => {
   const { t } = useTranslation();
 
   return (
-    <article className="w-full h-full rounded-lg dark:border border-gray-500 shadow-lg flex flex-col justify-evenly">
+    <article className="flex flex-col justify-evenly gap-6 shadow-lg w-full h-full dark:border rounded-lg dark:border-gray-500">
       <header className="flex justify-between p-4 border-b border-gray-200 dark:border-gray-500">
         <h1 className="text-2xl">{t("recoverPasswordCard.title")}</h1>
         <LangSwitch />

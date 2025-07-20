@@ -16,7 +16,7 @@ export const TesseractMesh = ({
   pulse,
   rotate,
   sparkless,
-  color = "black",
+  color = "grey",
   lineWidth = 3,
 }: Props) => {
   const groupRef = useRef<THREE.Group>(null);
@@ -130,7 +130,7 @@ export const TesseractMesh = ({
   useFrame(animate);
 
   return (
-    <group ref={groupRef}>
+    <group ref={groupRef} scale={[2, 2, 2]}>
       {sparkless && (
         <Sparkles position={[0, 0, 0]} count={50} size={5} scale={[2, 2, 2]} />
       )}
