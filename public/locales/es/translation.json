@@ -187,6 +187,10 @@
       "dictionary": {
         "name": "Diccionario",
         "description": "Aplicación de diccionario en inglés que permite buscar una amplia variedad de palabras. Muestra definiciones claras, pronunciaciones, ejemplos de uso, sinónimos y más recursos útiles para el aprendizaje del idioma."
+      },
+      "landingDoctor": {
+        "name": "Landing Doctor Salud",
+        "description": "Una landing page limpia y responsiva para un servicio enfocado en la salud. Destaca los principales beneficios médicos, áreas de tratamiento y un formulario de contacto para conectar a los pacientes con profesionales de la salud."
       }
     }
   },

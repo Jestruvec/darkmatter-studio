@@ -13,4 +13,10 @@ export const projects: Project[] = [
     imageUrl: "images/dictionary.webp",
     deployUrl: "https://dictionary-blush-five.vercel.app/",
   },
+  {
+    nameKey: "portfolioPage.projects.landingDoctor.name",
+    descriptionKey: "portfolioPage.projects.landingDoctor.description",
+    imageUrl: "images/landingDoctor.webp",
+    deployUrl: "https://jestruvec.github.io/landing-doctor/",
+  },
 ];

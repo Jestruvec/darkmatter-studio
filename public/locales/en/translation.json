@@ -187,6 +187,10 @@
       "dictionary": {
         "name": "Dictionary",
         "description": "An English dictionary app that lets you search a wide range of words. It provides clear definitions, pronunciations, usage examples, synonyms, and other helpful resources for language learning."
+      },
+      "landingDoctor": {
+        "name": "Landing Doctor Salud",
+        "description": "A clean and responsive landing page for a health-focused service. It highlights key medical benefits, treatment areas, and a contact form to connect patients with healthcare professionals."
       }
     }
   },
