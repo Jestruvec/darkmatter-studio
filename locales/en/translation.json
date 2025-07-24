@@ -191,6 +191,10 @@
       "landingDoctor": {
         "name": "Landing Doctor Salud",
         "description": "A clean and responsive landing page for a health-focused service. It highlights key medical benefits, treatment areas, and a contact form to connect patients with healthcare professionals."
+      },
+      "landingRestaurant": {
+        "name": "Landing Japanese Restaurant",
+        "description": "A visually captivating and responsive landing page for a traditional Japanese restaurant. It features an elegant menu, stunning food photography, customer testimonials, and a reservation section to provide visitors with an authentic dining experience."
       }
     }
   },

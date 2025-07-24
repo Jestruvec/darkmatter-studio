@@ -191,6 +191,10 @@
       "landingDoctor": {
         "name": "Landing Doctor Salud",
         "description": "Una landing page limpia y responsiva para un servicio enfocado en la salud. Destaca los principales beneficios médicos, áreas de tratamiento y un formulario de contacto para conectar a los pacientes con profesionales de la salud."
+      },
+      "landingRestaurant": {
+        "name": "Landing Restaurante Japonés",
+        "description": "Una página de aterrizaje visualmente atractiva y responsiva para un restaurante japonés tradicional. Incluye un menú elegante, fotografías impactantes de los platillos, opiniones de clientes y una sección de reservaciones que ofrece a los visitantes una experiencia gastronómica auténtica."
       }
     }
   },
