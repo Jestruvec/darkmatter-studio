@@ -3,7 +3,7 @@ import { AppRoutes } from "@/routes/AppRoutes";
 
 export default function App() {
   return (
-    <Router basename="/tesseract">
+    <Router>
       <AppRoutes />
     </Router>
   );
