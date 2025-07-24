@@ -19,4 +19,10 @@ export const projects: Project[] = [
     imageUrl: "images/landingDoctor.webp",
     deployUrl: "https://jestruvec.github.io/landing-doctor/",
   },
+  {
+    nameKey: "portfolioPage.projects.landingRestaurant.name",
+    descriptionKey: "portfolioPage.projects.landingRestaurant.description",
+    imageUrl: "images/landingRestaurant.webp",
+    deployUrl: "https://jestruvec.github.io/landing-restaurant/",
+  },
 ];
