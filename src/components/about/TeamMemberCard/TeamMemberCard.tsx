@@ -9,7 +9,7 @@ interface Props {
 
 export const TeamMemberCard = ({ member, t }: Props) => {
   return (
-    <article className="p-4 text-center bg-gray-50 dark:bg-gray-700 rounded-lg shadow-lg">
+    <article className="p-4 text-center bg-gray-50 dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-xl">
       <header>
         <img
           src={member.imageUrl}
