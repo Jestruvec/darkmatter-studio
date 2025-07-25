@@ -206,7 +206,12 @@
       "jhonnyEstruve": {
         "name": "Jhonny Estruve",
         "role": "Desarrollador Frontend",
-        "bio": "Apasionado por el desarrollo de interfaces modernas y experiencias de usuario intuitivas."
+        "bio": "Apasionado por desarrollar interfaces modernas y experiencias de usuario intuitivas."
+      },
+      "kevinLuna": {
+        "name": "Kevin Luna",
+        "role": "Desarrollador Backend",
+        "bio": "Enfocado en construir APIs escalables y soluciones robustas del lado del servidor con código limpio y eficiente."
       }
     }
   },
