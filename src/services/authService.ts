@@ -15,7 +15,7 @@ export const authService = {
       email,
       password,
       options: {
-        emailRedirectTo: "https://jestruvec.github.io/tesseract/login",
+        emailRedirectTo: "https://www.darkmatter-studio.com/login",
       },
     });
     if (error) throw error;
