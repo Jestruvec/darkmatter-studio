@@ -6,6 +6,13 @@ import App from "@/App";
 import i18n from "@/utils/i18n";
 import { LoadingScreen, AuthProvider, ThemeProvider } from "@/components";
 
+// 🔁 Restaurar ruta desde sessionStorage (para GitHub Pages)
+const redirect = sessionStorage.redirect;
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  window.history.replaceState(null, "", redirect);
+}
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
