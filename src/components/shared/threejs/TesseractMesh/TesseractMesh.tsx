@@ -2,6 +2,7 @@ import { RootState, useFrame } from "@react-three/fiber";
 import { Line, Sparkles } from "@react-three/drei";
 import { useRef, useState } from "react";
 import * as THREE from "three";
+import { useThemeContext } from "@/context";
 
 interface Props {
   sparkless?: boolean;
@@ -23,6 +24,7 @@ export const TesseractMesh = ({
   const linesRef = useRef<THREE.Group>(null);
   const opacity = useRef(1);
   const [opacityDirection, setOpacityDirection] = useState(1);
+  const { theme } = useThemeContext();
 
   const vertices = [
     // Cubo exterior
@@ -132,7 +134,13 @@ export const TesseractMesh = ({
   return (
     <group ref={groupRef} scale={[2, 2, 2]}>
       {sparkless && (
-        <Sparkles position={[0, 0, 0]} count={50} size={5} scale={[2, 2, 2]} />
+        <Sparkles
+          position={[0, 0, 0]}
+          count={50}
+          size={5}
+          scale={[2, 2, 2]}
+          color={theme === "dark" ? "white" : "gray"}
+        />
       )}
 
       <group ref={linesRef}>
