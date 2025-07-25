@@ -207,6 +207,11 @@
         "name": "Jhonny Estruve",
         "role": "Frontend Developer",
         "bio": "Passionate about developing modern interfaces and intuitive user experiences."
+      },
+      "kevinLuna": {
+        "name": "Kevin Luna",
+        "role": "Backend Developer",
+        "bio": "Focused on building scalable APIs and robust server-side solutions with clean and efficient code."
       }
     }
   },
