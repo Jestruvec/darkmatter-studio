@@ -102,6 +102,20 @@
       "subtitle": "Solutions designed for every stage of your digital presence.",
       "allServices": "View all services"
     },
+    "portfolio": {
+      "title": "Featured Projects",
+      "subtitle": "A selection of recent work showcasing skills and expertise.",
+      "allProjects": "View All Projects"
+    },
+    "trust": {
+      "title": "Why Choose Us",
+      "description": "We are committed to delivering custom, efficient, and reliable web solutions tailored to your needs. Browse our portfolio to see real projects and results.",
+      "viewPortfolio": "View Portfolio"
+    },
+    "tech": {
+      "title": "Technologies We Use",
+      "subtitle": "Tools and frameworks we use to build modern web applications."
+    },
     "footer": {
       "readyToStart": "Ready to start your project?",
       "schedule": "Schedule a free call and turn your idea into a real digital solution.",

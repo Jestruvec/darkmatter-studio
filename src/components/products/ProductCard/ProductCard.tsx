@@ -13,7 +13,7 @@ export const ProductCard = ({ t, product, isPreview = false }: Props) => {
   const safeFeatures = Array.isArray(features) ? features.slice(0, 3) : [];
 
   return (
-    <article className="p-4 text-center bg-gray-50 dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between">
+    <article className="p-4 text-center bg-white dark:bg-gray-700 rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between">
       <header>
         {IllustrationSVG && (
           <IllustrationSVG className="w-full h-48 object-contain" />

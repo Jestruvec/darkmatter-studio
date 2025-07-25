@@ -102,6 +102,20 @@
       "subtitle": "Soluciones diseñadas para cada etapa de tu presencia digital.",
       "allServices": "Ver todos los servicios"
     },
+    "portfolio": {
+      "title": "Proyectos Destacados",
+      "subtitle": "Una selección de trabajos recientes que muestran habilidades y experiencia.",
+      "allProjects": "Ver Todos los Proyectos"
+    },
+    "trust": {
+      "title": "Por Qué Elegirnos",
+      "description": "Estamos comprometidos a entregar soluciones web a la medida, eficientes y confiables, adaptadas a tus necesidades. Revisa nuestro portafolio para ver proyectos y resultados reales.",
+      "viewPortfolio": "Ver Portafolio"
+    },
+    "tech": {
+      "title": "Tecnologías Que Usamos",
+      "subtitle": "Herramientas y frameworks que usamos para construir aplicaciones web modernas."
+    },
     "footer": {
       "readyToStart": "¿Listo para comenzar tu proyecto?",
       "schedule": "Agenda una llamada gratuita y transforma tu idea en una solución digital real.",
