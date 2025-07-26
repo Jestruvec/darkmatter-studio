@@ -25,4 +25,10 @@ export const projects: Project[] = [
     imageUrl: "images/landingRestaurant.webp",
     deployUrl: "https://jestruvec.github.io/landing-restaurant/",
   },
+  {
+    nameKey: "portfolioPage.projects.landingTattoo.name",
+    descriptionKey: "portfolioPage.projects.landingTattoo.description",
+    imageUrl: "images/landingTattoo.png",
+    deployUrl: "https://jestruvec.github.io/landing-tattoo/",
+  },
 ];

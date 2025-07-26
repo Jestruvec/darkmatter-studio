@@ -195,11 +195,11 @@
     "ourProjects": "Our projects",
     "projects": {
       "cursedWaters": {
-        "name": "Cursed Waters",
+        "name": "Videogame Cursed Waters",
         "description": "A 3D game set on a tropical island. You are a pirate defending an ancient relic from waves of enemies. The difficulty increases with each wave — how many will you survive?"
       },
       "dictionary": {
-        "name": "Dictionary",
+        "name": "Webbapp Dictionary",
         "description": "An English dictionary app that lets you search a wide range of words. It provides clear definitions, pronunciations, usage examples, synonyms, and other helpful resources for language learning."
       },
       "landingDoctor": {
@@ -207,8 +207,12 @@
         "description": "A clean and responsive landing page for a health-focused service. It highlights key medical benefits, treatment areas, and a contact form to connect patients with healthcare professionals."
       },
       "landingRestaurant": {
-        "name": "Landing Japanese Restaurant",
+        "name": "Landing Hanami",
         "description": "A visually captivating and responsive landing page for a traditional Japanese restaurant. It features an elegant menu, stunning food photography, customer testimonials, and a reservation section to provide visitors with an authentic dining experience."
+      },
+      "landingTattoo": {
+        "name": "Landing BlackNeedle",
+        "description": "A visually striking and responsive landing page for a tattoo studio. It showcases artistic tattoo designs, client testimonials, a gallery of ink work, and a booking section to help visitors schedule their personalized tattoo sessions."
       }
     }
   },
