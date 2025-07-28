@@ -13,11 +13,12 @@ export const projects: Project[] = [
     imageUrl: "images/cursedWaters.webp",
     deployUrl: "https://jestruvec.github.io/cursed-waters/",
   },
+
   {
-    nameKey: "portfolioPage.projects.landingDoctor.name",
-    descriptionKey: "portfolioPage.projects.landingDoctor.description",
-    imageUrl: "images/landingDoctor.webp",
-    deployUrl: "https://jestruvec.github.io/landing-doctor/",
+    nameKey: "portfolioPage.projects.landingTattoo.name",
+    descriptionKey: "portfolioPage.projects.landingTattoo.description",
+    imageUrl: "images/landingTattoo.png",
+    deployUrl: "https://jestruvec.github.io/landing-tattoo/",
   },
   {
     nameKey: "portfolioPage.projects.landingRestaurant.name",
@@ -26,9 +27,9 @@ export const projects: Project[] = [
     deployUrl: "https://jestruvec.github.io/landing-restaurant/",
   },
   {
-    nameKey: "portfolioPage.projects.landingTattoo.name",
-    descriptionKey: "portfolioPage.projects.landingTattoo.description",
-    imageUrl: "images/landingTattoo.png",
-    deployUrl: "https://jestruvec.github.io/landing-tattoo/",
+    nameKey: "portfolioPage.projects.landingDoctor.name",
+    descriptionKey: "portfolioPage.projects.landingDoctor.description",
+    imageUrl: "images/landingDoctor.webp",
+    deployUrl: "https://jestruvec.github.io/landing-doctor/",
   },
 ];

@@ -89,7 +89,7 @@ export const HomePage = () => {
           <p className="text-center mt-2">{t("homePage.portfolio.subtitle")}</p>
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {projects.slice(1).map((project, idx) => (
+            {projects.slice(1, 4).map((project, idx) => (
               <ProjectCard key={idx} project={project} t={t} />
             ))}
           </div>
