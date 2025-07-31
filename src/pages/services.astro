@@ -1,0 +1,53 @@
+---
+import SecondaryLayout from '@/layouts/SecondaryLayout.astro';
+import { services } from '@/data';
+---
+
+<SecondaryLayout title="Servicios">
+  <section
+    id="services"
+    class="flex items-center"
+    aria-labelledby="services-heading"
+  >
+    <div class="mx-auto max-w-7xl mt-12">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
+        Servicios
+      </h2>
+      <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12 text-lg">
+        Ofrecemos soluciones digitales a medida que se adaptan a las necesidades
+        de cada cliente.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          services.map((s) => (
+            <article
+              class="p-6 text-center bg-white rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between"
+              aria-label="Servicio"
+            >
+              <header>
+                <div class="flex justify-center mb-4">
+                  <s.svg className="w-full h-48 object-contain" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 ">{s.name}</h3>
+              </header>
+
+              <section>
+                <p class="mt-2 text-sm text-gray-600 ">{s.longDescription}</p>
+                <p class="mt-2 text-sm font-medium text-blue-800">{s.price}</p>
+              </section>
+
+              <footer class="mt-4 text-sm">
+                <ul class="text-left list-disc list-inside text-gray-600 ">
+                  {s.features.map((feature, index) => (
+                    <li>{feature}</li>
+                  ))}
+                </ul>
+              </footer>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</SecondaryLayout>

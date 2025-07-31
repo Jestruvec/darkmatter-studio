@@ -1,86 +1,46 @@
-# 🌌 Darkmatter Studio
+# Astro Starter Kit: Basics
 
-A modern and minimal website to showcase my services as a professional web developer.
+```sh
+npm create astro@latest -- --template basics
+```
 
-[🌐 Visit site](https://darkmatter-studio.com)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
----
+## 🚀 Project Structure
 
-## 🚀 About
+Inside of your Astro project, you'll see the following folders and files:
 
-Darkmatter Studio is a personal portfolio and service showcase built with:
-
-- **React + Vite**
-- **TypeScript**
-- **Tailwind CSS**
-- **i18n** (English & Spanish)
-- **SWC** for ultra-fast builds
-- **Supabase** for authentication and backend services
-
----
-
-## 🛠 Features
-
-- 🔒 User authentication (login, register, password reset)
-- 🌐 Multilingual support (Spanish 🇲🇽 by default, English 🇺🇸 available)
-- 📱 Fully responsive design
-- ⚡ Fast loading and optimized performance
-- 🧠 Clean and scalable codebase
-- 🧪 Unit testing with Vitest
-
----
-
-## 📂 Folder structure
-
-\`\`\`
-.
+```text
+/
 ├── public/
-├── src/
-│ ├── assets/
-│ ├── components/
-│ ├── pages/
-│ ├── services/
-│ ├── utils/
-│ └── main.tsx
-├── CNAME
-├── index.html
-└── README.md
-\`\`\`
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
+```
 
----
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 📦 Installation
+## 🧞 Commands
 
-\`\`\`bash
+All commands are run from the root of the project, from a terminal:
 
-# Clone the repo
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-git clone https://github.com/jestruvec/darkmatter-studio.git
-cd darkmatter-studio
+## 👀 Want to learn more?
 
-# Install dependencies
-
-npm install
-
-# Start dev server
-
-npm run dev
-\`\`\`
-
----
-
-## 🧪 Testing
-
-\`\`\`bash
-npm run test
-\`\`\`
-
----
-
-## 🧾 License
-
-This project is open source and free to use under the [MIT License](LICENSE).
-
----
-
-Made with ❤️ by [Jhonny Estruve](https://darkmatter-studio.com)
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

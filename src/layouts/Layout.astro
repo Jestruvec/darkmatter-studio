@@ -1,0 +1,62 @@
+---
+import Analytics from '@/components/Analytics.astro';
+import '../styles/global.css';
+import { PageHeader } from '@/components';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>DarkMatter Studio</title>
+
+    <meta
+      name="description"
+      content="Desarrollamos sitios web modernos, rápidos y personalizados para tu negocio."
+    />
+
+    <link rel="canonical" href="https://darkmatter-studio.com/" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:title" content="DarkMatter Studio" />
+    <meta
+      property="og:description"
+      content="Impulsa tu presencia digital con sitios web modernos, rápidos y adaptados a tu negocio."
+    />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://darkmatter-studio.com" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DarkMatter Studio" />
+    <meta
+      name="twitter:description"
+      content="Impulsa tu presencia digital con sitios web modernos."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <Analytics />
+  </head>
+  <body>
+    <PageHeader />
+    <slot />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

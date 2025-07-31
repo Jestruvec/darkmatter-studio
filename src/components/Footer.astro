@@ -1,0 +1,67 @@
+---
+import { MapPin, Mail } from 'lucide-astro';
+---
+
+<footer class="bg-gray-50 text-gray-700 pt-12 mt-20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Logo + Nombre -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img
+          src="images/tesseract.webp"
+          alt="DarkMatter Studio Logo"
+          class="w-10 h-10"
+        />
+        <span class="text-xl font-bold text-gray-800">DarkMatter Studio</span>
+      </div>
+      <p class="text-sm">
+        Desarrollamos sitios web y soluciones digitales modernas desde Mérida,
+        Yucatán.
+      </p>
+    </div>
+
+    <!-- Navegación -->
+    <div>
+      <h3 class="text-md font-semibold mb-4 text-gray-800">Navegación</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#hero" class="hover:text-blue-700">Inicio</a></li>
+        <li><a href="#projects" class="hover:text-blue-700">Proyectos</a></li>
+        <li><a href="#services" class="hover:text-blue-700">Servicios</a></li>
+        <li><a href="#about" class="hover:text-blue-700">Nosotros</a></li>
+        <li><a href="#contact" class="hover:text-blue-700">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div>
+      <h3 class="text-md font-semibold mb-4 text-gray-800 dark:text-white">
+        Contacto
+      </h3>
+      <ul class="text-sm space-y-3">
+        <li class="flex items-center gap-2">
+          <MapPin class="w-4 h-4 text-blue-800" />
+          Mérida, Yucatán, México
+        </li>
+        <li class="flex items-center gap-2">
+          <Mail class="w-4 h-4 text-blue-800" />
+          <a
+            href="mailto:contact@darkmatter-studio.com"
+            class="hover:text-blue-700"
+          >
+            contact@darkmatter-studio.com
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center text-sm text-gray-600">
+    © <span id="year">{new Date().getFullYear()}</span> DarkMatter Studio. Todos
+    los derechos reservados.
+  </div>
+
+  <!-- Año dinámico si quieres -->
+  <script is:inline>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
