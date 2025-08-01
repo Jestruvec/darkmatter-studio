@@ -1,24 +1,19 @@
 ---
-const GA_ID = 'G-1YTWKC420P';
 const isProd = import.meta.env.PROD;
 ---
 
-{
-  isProd && (
-    <>
-      <script
-        async
-        is:inline
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-      />
-      <script is:inline>
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', '${GA_ID}');
-      `}
-      </script>
-    </>
-  )
-}
+{isProd && (
+  <>
+    <script
+      async
+      is:inline
+      src="https://www.googletagmanager.com/gtag/js?id=G-1YTWKC420P"
+    />
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{ dataLayer.push(arguments); }}
+      gtag('js', new Date());
+      gtag('config', 'G-1YTWKC420P');
+    </script>
+  </>
+)}
