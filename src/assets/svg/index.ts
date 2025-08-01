@@ -1,9 +1,9 @@
-import AdminPageSVG from './adminPage.svg?component';
-import CustomPageSVG from './customPage.svg?component';
-import EcommercePageSVG from './ecomercePage.svg?component';
-import LandingPageSVG from './landingPage.svg?component';
-import WebDevelopmentSVG from './webDevelopment.svg?component';
-import WebMaintenanceSVG from './webMaintenance.svg?component';
+import AdminPageSVG from './adminPage.svg?react';
+import CustomPageSVG from './customPage.svg?react';
+import EcommercePageSVG from './ecomercePage.svg?react';
+import LandingPageSVG from './landingPage.svg?react';
+import WebDevelopmentSVG from './webDevelopment.svg?react';
+import WebMaintenanceSVG from './webMaintenance.svg?react';
 
 export {
   AdminPageSVG,

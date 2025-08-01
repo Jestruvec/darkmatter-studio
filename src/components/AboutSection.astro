@@ -1,6 +1,6 @@
 ---
 import { team } from '@/data';
-import { Linkedin, Github } from 'lucide-astro';
+import { TeamCard } from '@/components';
 ---
 
 <section
@@ -20,37 +20,7 @@ import { Linkedin, Github } from 'lucide-astro';
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      {
-        team.map((t) => (
-          <article
-            class="p-4 text-center bg-white max-w-md rounded-lg shadow-lg hover:shadow-xl"
-            aria-label="Miembro del equipo"
-          >
-            <header>
-              <img
-                src={t.imageUrl}
-                alt={t.name}
-                class="w-24 h-24 mx-auto rounded-full object-cover"
-              />
-              <h3 class="mt-4 text-lg font-semibold">{t.name}</h3>
-              <p class="text-sm">{t.role}</p>
-            </header>
-
-            <section>
-              <p class="mt-2 text-sm">{t.bio}</p>
-            </section>
-
-            <footer class="flex justify-center gap-4 mt-3">
-              <a href={t.linkedinUrl} target="_blank" rel="noreferrer">
-                <Linkedin />
-              </a>
-              <a href={t.githubUrl} target="_blank" rel="noreferrer">
-                <Github />
-              </a>
-            </footer>
-          </article>
-        ))
-      }
+      {team.map((t) => <TeamCard teamMember={t} />)}
     </div>
   </div>
 </section>

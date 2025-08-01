@@ -1,0 +1,36 @@
+---
+import type { Project } from '@/interfaces';
+const { project }: { project?: Project } = Astro.props;
+---
+
+<>
+  {
+    project ? (
+      <article
+        class="block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition bg-white"
+        aria-label="Proyecto"
+      >
+        <a
+          href={project.deployUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block"
+        >
+          <figure>
+            <img
+              src={project.imageUrl}
+              alt={project.name}
+              class="w-full h-64 object-cover"
+            />
+            <figcaption class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                {project.name}
+              </h3>
+              <p class="text-sm text-gray-600 mt-2">{project.description}</p>
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+    ) : null
+  }
+</>

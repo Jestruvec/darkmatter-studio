@@ -8,6 +8,7 @@ import {
 
 export const services = [
   {
+    id: 1,
     name: 'Desarrollo a la Medida',
     shortDescription: 'Soluciones únicas para necesidades únicas.',
     longDescription:
@@ -22,6 +23,7 @@ export const services = [
     svg: CustomPageSVG,
   },
   {
+    id: 2,
     name: 'Landing Page Profesional',
     shortDescription: 'Presencia web rápida y efectiva.',
     longDescription:
@@ -36,6 +38,7 @@ export const services = [
     svg: LandingPageSVG,
   },
   {
+    id: 3,
     name: 'Mantenimiento Web',
     shortDescription: 'Tu sitio siempre actualizado y funcionando.',
     longDescription:
@@ -50,6 +53,7 @@ export const services = [
     svg: WebMaintenanceSVG,
   },
   {
+    id: 4,
     name: 'Tienda en Línea',
     shortDescription: 'Vende tus productos 24/7 con una tienda online.',
     longDescription:
@@ -64,6 +68,7 @@ export const services = [
     svg: EcommercePageSVG,
   },
   {
+    id: 5,
     name: 'Plataforma Administrativa',
     shortDescription: 'Control total sobre tu negocio digital.',
     longDescription:

@@ -1,0 +1,39 @@
+---
+import { Linkedin, Github } from 'lucide-astro';
+import type { TeamMember } from '@/interfaces';
+const { teamMember }: { teamMember?: TeamMember } = Astro.props;
+---
+
+<>
+  {
+    teamMember ? (
+      <article
+        class="p-4 text-center bg-white max-w-md rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between"
+        aria-label="Miembro del equipo"
+      >
+        <header>
+          <img
+            src={teamMember.imageUrl}
+            alt={teamMember.name}
+            class="w-24 h-24 mx-auto rounded-full object-cover"
+          />
+          <h3 class="mt-4 text-lg font-semibold">{teamMember.name}</h3>
+          <p class="text-sm">{teamMember.role}</p>
+        </header>
+
+        <section>
+          <p class="mt-2 text-sm">{teamMember.bio}</p>
+        </section>
+
+        <footer class="flex justify-center gap-4 mt-3">
+          <a href={teamMember.linkedinUrl} target="_blank" rel="noreferrer">
+            <Linkedin />
+          </a>
+          <a href={teamMember.githubUrl} target="_blank" rel="noreferrer">
+            <Github />
+          </a>
+        </footer>
+      </article>
+    ) : null
+  }
+</>

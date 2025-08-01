@@ -2,7 +2,7 @@ export const team = [
   {
     name: 'Jhonny Estruve',
     role: 'Desarrollador Frontend',
-    bio: 'Apasionado por desarrollar interfaces modernas y experiencias de usuario intuitivas.',
+    bio: 'Especializado en crear interfaces modernas y optimizadas, comprometido con ofrecer experiencias de usuario fluidas y accesibles.',
     imageUrl: '/images/frontend-dev-1.webp',
     linkedinUrl: 'https://www.linkedin.com/in/jhonny-estruve-35ba4b1b2/',
     githubUrl: 'https://github.com/jestruvec',

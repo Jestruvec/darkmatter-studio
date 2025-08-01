@@ -1,0 +1,48 @@
+---
+import type { Service } from '@/interfaces';
+const {
+  service,
+  longDescription,
+}: { service?: Service; longDescription?: boolean } = Astro.props;
+---
+
+<>
+  {
+    service ? (
+      <article
+        class="p-6 text-center bg-white rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between"
+        aria-label="Servicio"
+      >
+        <header>
+          <div class="flex justify-center mb-4">
+            <service.svg className="w-full h-48 object-contain" />
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800">{service.name}</h3>
+        </header>
+
+        <section>
+          <p class="mt-2 text-sm text-gray-600">
+            {longDescription
+              ? service.longDescription
+              : service.shortDescription}
+          </p>
+          <p class="mt-2 text-sm font-medium text-blue-600">{service.price}</p>
+          <ul class="text-left list-disc list-inside text-gray-600 mt-4">
+            {service.features.map((feature) => (
+              <li>{feature}</li>
+            ))}
+          </ul>
+        </section>
+
+        <footer class="text-sm">
+          <a
+            href={`/?service=${encodeURIComponent(service.id)}#contact`}
+            class="inline-block mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-gray-100 transition"
+          >
+            Solicitar este servicio
+          </a>
+        </footer>
+      </article>
+    ) : null
+  }
+</>

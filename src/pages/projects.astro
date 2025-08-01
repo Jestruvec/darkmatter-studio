@@ -1,6 +1,7 @@
 ---
 import SecondaryLayout from '@/layouts/SecondaryLayout.astro';
 import { projects } from '@/data';
+import { ProjectCard } from '@/components';
 ---
 
 <SecondaryLayout title="Proyectos">
@@ -23,35 +24,7 @@ import { projects } from '@/data';
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {
-          projects.map((p) => (
-            <article
-              class="block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition bg-white "
-              aria-label="Proyecto"
-            >
-              <a
-                href={p.deployUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block"
-              >
-                <figure>
-                  <img
-                    src={p.imageUrl}
-                    alt={p.name}
-                    class="w-full h-64 object-cover"
-                  />
-                  <figcaption class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800 ">
-                      {p.name}
-                    </h3>
-                    <p class="text-sm text-gray-600  mt-2">{p.description}</p>
-                  </figcaption>
-                </figure>
-              </a>
-            </article>
-          ))
-        }
+        {projects.map((p) => <ProjectCard project={p} />)}
       </div>
     </div>
   </section>
