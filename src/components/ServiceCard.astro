@@ -11,12 +11,10 @@ const {
     service ? (
       <article
         class="p-6 text-center bg-white rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between"
-        aria-label="Servicio"
+        aria-label={`Servicio ${service.name}`}
       >
-        <header>
-          <div class="flex justify-center mb-4">
-            <service.svg className="w-full h-48 object-contain" />
-          </div>
+        <header class="flex flex-col gap-4 items-center">
+          <service.svg className="w-full h-48 object-contain" />
           <h3 class="text-lg font-semibold text-gray-800">{service.name}</h3>
         </header>
 
@@ -37,6 +35,7 @@ const {
         <footer class="text-sm">
           <a
             href={`/?service=${encodeURIComponent(service.id)}#contact`}
+            aria-label={`Solicitar el servicio ${service.name}`}
             class="inline-block mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-gray-100 transition"
           >
             Solicitar este servicio

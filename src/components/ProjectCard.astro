@@ -8,7 +8,7 @@ const { project }: { project?: Project } = Astro.props;
     project ? (
       <article
         class="block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition bg-white"
-        aria-label="Proyecto"
+        aria-label={`Proyecto: ${project.name}`}
       >
         <a
           href={project.deployUrl}
