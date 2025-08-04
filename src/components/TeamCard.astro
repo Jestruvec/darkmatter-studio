@@ -6,44 +6,47 @@ const { teamMember }: { teamMember?: TeamMember } = Astro.props;
 
 <>
   {
-    teamMember ? (
+    teamMember && (
       <article
-        class="p-4 text-center bg-white max-w-md rounded-lg shadow-lg hover:shadow-xl flex flex-col justify-between"
+        class="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center border border-gray-100"
         aria-label={`Miembro del equipo: ${teamMember.name}`}
       >
-        <header>
-          <img
-            src={teamMember.imageUrl}
-            alt={teamMember.name}
-            class="w-24 h-24 mx-auto rounded-full object-cover"
-          />
-          <h3 class="mt-4 text-lg font-semibold">{teamMember.name}</h3>
-          <p class="text-sm">{teamMember.role}</p>
-        </header>
+        <div class="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center text-blue-900 text-3xl font-bold mb-4 uppercase">
+          {teamMember.name[0]}
+        </div>
 
-        <section>
-          <p class="mt-2 text-sm">{teamMember.bio}</p>
-        </section>
+        <h3 class="text-xl font-semibold text-gray-800">{teamMember.name}</h3>
+        <p class="text-sm text-blue-900 font-medium mb-3">{teamMember.role}</p>
 
-        <footer class="flex justify-center gap-4 mt-3">
-          <a
-            href={teamMember.linkedinUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Perfil de LinkedIn de ${teamMember.name}, abre en nueva pestaña`}
-          >
-            <Linkedin />
-          </a>
-          <a
-            href={teamMember.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Perfil de GitHub de ${teamMember.name}, abre en nueva pestaña`}
-          >
-            <Github />
-          </a>
-        </footer>
+        <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+          {teamMember.bio}
+        </p>
+
+        <div class="flex gap-4 mt-auto">
+          {teamMember.linkedinUrl && (
+            <a
+              href={teamMember.linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Perfil de LinkedIn de ${teamMember.name}, abre en nueva pestaña`}
+              class="text-gray-500 hover:text-blue-800 transition-colors"
+            >
+              <Linkedin class="w-5 h-5" />
+            </a>
+          )}
+          {teamMember.githubUrl && (
+            <a
+              href={teamMember.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Perfil de GitHub de ${teamMember.name}, abre en nueva pestaña`}
+              class="text-gray-600 hover:text-blue-800 transition-colors"
+            >
+              <Github class="w-5 h-5" />
+            </a>
+          )}
+        </div>
       </article>
-    ) : null
+    )
   }
 </>

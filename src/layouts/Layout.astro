@@ -1,7 +1,7 @@
 ---
 import Analytics from '@/components/Analytics.astro';
 import '../styles/global.css';
-import { PageHeader } from '@/components';
+import { PageFooter, PageHeader } from '@/components';
 ---
 
 <!doctype html>
@@ -47,8 +47,13 @@ import { PageHeader } from '@/components';
     <Analytics />
   </head>
   <body>
-    <PageHeader />
-    <slot />
+    <div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+      <PageHeader />
+      <main>
+        <slot />
+      </main>
+      <PageFooter />
+    </div>
   </body>
 </html>
 

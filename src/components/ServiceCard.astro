@@ -24,7 +24,7 @@ const {
               ? service.longDescription
               : service.shortDescription}
           </p>
-          <p class="mt-2 text-sm font-medium text-blue-600">{service.price}</p>
+          <p class="mt-2 text-sm font-medium text-blue-900">{service.price}</p>
           <ul class="text-left list-disc list-inside text-gray-600 mt-4">
             {service.features.map((feature) => (
               <li>{feature}</li>
@@ -36,7 +36,7 @@ const {
           <a
             href={`/?service=${encodeURIComponent(service.id)}#contact`}
             aria-label={`Solicitar el servicio ${service.name}`}
-            class="inline-block mt-4 px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-gray-100 transition"
+            class="inline-block mt-4 px-4 py-2 border border-blue-900 text-blue-900 rounded-lg hover:bg-gray-100 transition"
           >
             Solicitar este servicio
           </a>

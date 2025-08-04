@@ -211,7 +211,7 @@ export const ContactForm = () => {
       <div className="text-center">
         <button
           type="submit"
-          className="px-6 py-3 cursor-pointer bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition"
+          className="px-6 py-3 cursor-pointer bg-blue-900 text-white font-semibold rounded-md hover:bg-blue-800 transition"
         >
           Enviar mensaje
         </button>

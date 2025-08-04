@@ -43,13 +43,15 @@ const { title }: { title?: string } = Astro.props;
     <Analytics />
   </head>
   <body>
-    <SecondaryHeader pageTitle={title} />
+    <div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+      <SecondaryHeader pageTitle={title} />
 
-    <main class="min-h-screen pt-20 px-6">
-      <slot />
-    </main>
+      <main>
+        <slot />
+      </main>
 
-    <SecondaryFooter />
+      <SecondaryFooter />
+    </div>
   </body>
 </html>
 
