@@ -64,7 +64,7 @@ export const services = [
       'Pasarela de pago (Stripe, PayPal)',
       'Panel administrativo',
     ],
-    price: 'a partir de 15,000 mxn',
+    price: 'a partir de 12,000 mxn',
     svg: EcommercePageSVG,
   },
   {
@@ -79,7 +79,7 @@ export const services = [
       'Reportes y estadísticas',
       'Acceso seguro con autenticación',
     ],
-    price: 'a partir de 25,000 mxn',
+    price: 'a partir de 20,000 mxn',
     svg: AdminPageSVG,
   },
 ];
