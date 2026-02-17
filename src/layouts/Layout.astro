@@ -2,22 +2,34 @@
 import Analytics from '@/components/Analytics.astro';
 import '../styles/global.css';
 import { PageFooter, PageHeader } from '@/components';
----
 
+type LayoutProps = {
+  title?: string;
+  description?: string;
+  canonical?: string; // URL absoluta
+  ogTitle?: string;
+  ogDescription?: string;
+  ogUrl?: string; // URL absoluta
+};
+
+const {
+  title = "DarkMatter Studio",
+  description = "Desarrollamos sitios web modernos, rápidos y personalizados para tu negocio.",
+  canonical = "https://darkmatter-studio.com/",
+  ogTitle = title,
+  ogDescription = "Impulsa tu presencia digital con sitios web modernos, rápidos y adaptados a tu negocio.",
+  ogUrl = "https://darkmatter-studio.com/",
+} = Astro.props as LayoutProps;
+---
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>DarkMatter Studio</title>
-
-    <meta
-      name="description"
-      content="Desarrollamos sitios web modernos, rápidos y personalizados para tu negocio."
-    />
-
-    <link rel="canonical" href="https://darkmatter-studio.com/" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
 
     <meta name="generator" content={Astro.generator} />
 
@@ -26,21 +38,15 @@ import { PageFooter, PageHeader } from '@/components';
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    <meta property="og:title" content="DarkMatter Studio" />
-    <meta
-      property="og:description"
-      content="Impulsa tu presencia digital con sitios web modernos, rápidos y adaptados a tu negocio."
-    />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
     <meta property="og:image" content="/og-image.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://darkmatter-studio.com" />
+    <meta property="og:url" content={ogUrl} />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DarkMatter Studio" />
-    <meta
-      name="twitter:description"
-      content="Impulsa tu presencia digital con sitios web modernos."
-    />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={ogDescription} />
     <meta name="twitter:image" content="/og-image.png" />
 
     <link rel="manifest" href="/site.webmanifest" />
